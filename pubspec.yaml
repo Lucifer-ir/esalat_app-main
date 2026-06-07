@@ -1,0 +1,50 @@
+name: esalat_car
+description: "اپلیکیشن اصالت خودرو"
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  
+  # پکیج‌های اصلی پروژه
+  http: ^1.2.1                  # برای ارتباط با API سرور
+  shared_preferences: ^2.2.3    # برای ذخیره کوکی/توکن لاگین
+  provider: ^6.1.2              # برای مدیریت تم تاریک/روشن
+  image_picker: ^1.0.7          # برای دسترسی به دوربین و گالری (ثبت تصویر)
+  webview_flutter: ^4.8.0
+  sms_autofill: ^2.3.0
+  shimmer: ^3.0.0
+  app_settings: ^5.1.1
+  connectivity_plus: ^6.0.3
+  percent_indicator: ^4.2.3 # برای نیم دایره اشتراک
+  share_plus: ^7.2.1 # برای اشتراک گذاری متن دعوت
+  url_launcher: ^6.2.4 # برای باز کردن لینک درگاه پرداخت
+  cached_network_image: ^3.3.1 # برای لود کردن بنر تبلیغاتی با شیمر
+  app_links: ^6.1.4 # برای دریافت لینک بازگشت از درگاه پرداخت
+  shamsi_date: ^0.14.0 # برای تبدیل تاریخ میلادی به شمسی
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # فعال کردن پوشه فونت‌ها
+  fonts:
+    - family: Peyda  # نامی که در کدهای فلاتر استفاده می‌کنی
+      fonts:
+        - asset: assets/fonts/Peyda-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Peyda-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Peyda-Bold.ttf
+          weight: 700
